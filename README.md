@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is when a function is created and creates scope within that function. Usually defined between curly braces.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +83,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  The closure is used to create a higher order function by nesting the 'function' function within the personalDice function.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The name parameter will always stay the same with dansRoll, but the resulting roll will change since it is determined by Math.random.
+
+c. What is the lexical scope of `newRoll`? 
+  It can only be called from within the function function.
 
 ### Task 3 - Stretch Goals
 
